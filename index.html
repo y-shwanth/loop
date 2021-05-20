@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is html basics website"> 
+    <link rel="stylesheet" href="css/main.css">  
+    <title>loop</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">L<span>OO</span>P</a>
+            <img id="mobile_nav_menu" class="mobile_menu" src="images/menu.svg" alt="mobile navigation menu">
+            
+            <nav class="webnav">
+                <img id="mobile_exit" class="menu_exit" src="images/exit.svg" alt="exit button">
+                <ul class="primary_nav">
+                    <li class="current"><a href="#">recommended</a></li>
+                    <li><a href="#">profile</a></li>
+                    <li><a href="#">settings</a></li>
+                </ul>
+
+                <ul class="secondary_nav">
+                    <li><a href="#">contact</a></li>
+                    <li class="contribute"><a href="#">contribute</a></li>  
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="leftcolumn">
+                <p class="subhead">no no no<br>not repeat</p>
+                <h1>TRY LOOP WHICH NEVER DISAPPOINTS</h1>
+
+                <div class="hero_cta">
+                    <a href="#" class="primary_cta">Join us</a>
+                    <a href="#" class="wanna_know_more">
+                        <img src="images/watch.svg" alt="know more">
+                        wanna know more
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero_img" alt="illustration">
+        </div>
+
+    </section>
+
+    <section class="features_section">
+        <div class="container">
+            <ul class="features_list">
+                <li>get recommendations from your favourites</li>
+                <li>personal playlist</li>
+                <li>put the songs in loop</li>
+                <li>other awesome features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="man_holding_phone">
+        </div>
+    </section>
+
+    <section class="feedback_section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote>"its really super cool i highly recommend this site"</blockquote>
+                    <cite>- arjun</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote>"its really super cool i highly recommend this site"</blockquote>
+                    <cite>- arjun</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote>"its really super cool i highly recommend this site"</blockquote>
+                    <cite>- arjun</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact_section">
+        <div class="container">
+            <div class="contact_left">
+                <h2>CONTACT</h2>
+
+                <form>
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send_message" value="send">
+                </form>
+            </div>
+
+            <div class="contact_right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.3874432864404!2d88.34107581491072!3d22.564608085186862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02779ff7e5b9af%3A0x1d1b1884bdbbbd79!2sEden%20Gardens!5e0!3m2!1sen!2sin!4v1618918461520!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.getElementById('mobile_nav_menu')
+              nav = document.querySelector('nav')
+              closeBtn = document.getElementById('mobile_exit');
+        
+    menuBtn.addEventListener('click',() =>{
+        nav.classList.add('menu-btn');
+    })
+
+    closeBtn.addEventListener('click',() =>{
+        nav.classList.remove('menu-btn');
+    })
+    </script>
+</body>
+</html>
